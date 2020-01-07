@@ -10,7 +10,6 @@ aunque varia en función del lenguaje.
 	* Orientado a Objetos
 	* Por procedimientos
 	* Procesamiento paralelo
-
 **Ejemplos:** Go, Basic y PHP.
 
 * **Declarativos:** Basados más en las matemáticas y en la lógica, más cercanos
@@ -20,7 +19,6 @@ ni tipos. Se usa para resolver problemas mediante sentencias.
 	* Funcionales
 	* Lógicos
 	* Relacionales
-
 **Ejemplos:** Lisp, Prolog y SQL.
 
 ## Paradigma de programación lógica
@@ -35,7 +33,7 @@ reglas, hipótesis y teoremas."*
 Dado un problema S, saber si la proposición lógica A, es solución o no de dicho
 problema o en cuáles casos lo es.
 
-![componentes de los algoritmos de programación lógica](images/I00.png)
+![componentes de los algoritmos de programación lógica](/images/I00.png)
 
 ## Conceptos claves
 
