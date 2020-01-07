@@ -5,4 +5,5 @@ paradigms both in the theorical an in the practical part.
 
 
 The paradigms addresed are:
+* Logical programming - Prolog language
 * Parallel programming - Julia language
