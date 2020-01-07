@@ -7,19 +7,19 @@
 manera secuencial, salvo cuado se encuentra con estructuras de control,
 condicionales o bucles. Hay declaraciones de variables, tipos y procedimientos
 aunque varia en función del lenguaje.
+**Ejemplos:** Go, Basic y PHP.
 	* Orientado a Objetos
 	* Por procedimientos
 	* Procesamiento paralelo
-**Ejemplos:** Go, Basic y PHP.
 
 * **Declarativos:** Basados más en las matemáticas y en la lógica, más cercanos
 al razonamiento humano. No se enfoca en **cómo** hacer una cosa, sino **qué**
 hacer, a diferencia de los imperativos. No suele haber declaración de variables
 ni tipos. Se usa para resolver problemas mediante sentencias. 
+**Ejemplos:** Lisp, Prolog y SQL.
 	* Funcionales
 	* Lógicos
 	* Relacionales
-**Ejemplos:** Lisp, Prolog y SQL.
 
 ## Paradigma de programación lógica
 * *"La programación lógica permite modelar problemas por medio de la abstracción,
@@ -33,7 +33,7 @@ reglas, hipótesis y teoremas."*
 Dado un problema S, saber si la proposición lógica A, es solución o no de dicho
 problema o en cuáles casos lo es.
 
-![componentes de los algoritmos de programación lógica](/images/I00.png)
+![componentes de los algoritmos de programación lógica](./images/I00.png)
 
 ## Conceptos claves
 
