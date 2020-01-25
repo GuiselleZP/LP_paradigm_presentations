@@ -95,3 +95,5 @@ Algunso lenguajes en los que se puede trbajar este paradigma Java, c++, python
 
 [Link notebook 2019-II ](https://hub-binder.mybinder.ovh/user/futureun-rusttutorial-dts7k0cs/tree)
 
+Rust es un lenguaje de programación de sistemas de paradigmas múltiples centrado en la seguridad, especialmente la concurrencia segura.Rust es sintácticamente similar a C ++, pero está diseñado para proporcionar una mejor seguridad de la memoria mientras se mantiene un alto rendimiento.
+
