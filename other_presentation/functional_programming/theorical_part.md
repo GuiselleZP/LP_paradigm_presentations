@@ -168,4 +168,9 @@ class Main{
 * Parser.
 * Inversión en bolsa.
 
+# Haskell
+
+[Link del video en youtube](https://www.youtube.com/watch?v=Lp7J2NoI3C0)
+
+[Link del nootebook 2019-II](https://drive.google.com/file/d/1XQiKMEdaY6YYjPM5cFr1BiQgBONcIXiG/view)
 
