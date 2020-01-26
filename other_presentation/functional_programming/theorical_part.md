@@ -6,11 +6,11 @@ La programación funcional es un paradigma de programación **declarativo**, que
 
 En este paradigma se utilizan las funciones para dar orden y estructura a los problemas planteados. Un *función* es la relación de dos conjuntos, es decir una asociación de cada elemento de un conjunto a otro.
 
-![](./images/Image1.png)
+![](./images/Imagen1.png)
 
 El concepto de funcion en este paradigma, es totalmente diferente a los otros donde se definen las funciones como procedimientos, operaciones, metodos o rutinas. 
 
-![](./images/Image2.png)
+![](./images/Imagen2.png)
 
 Dentro del paradigma de programación funcional  las funciones pueden afectar el estado de un programa, permitiendo que al evaluar una función se obtengan valores diferentes en diferentes evaluaciones(sin embargo esto no se debe dar en la prog funcional), dentro de este paradigma se define el concepto de transferencia referencial para indicar que cada valor de entrda siempre va a tener la misma salida; otros conceptos que son definidos dentro del paradigma son composicion de funciones y funciones de orden superior (admiten como entrada o como salida funciones).
 
@@ -43,7 +43,7 @@ Una entidad de un lenguaje de programación es considerada de primera clase si c
 ### Calculo Lambda 
 ###### (formulado por Alonzo Church - 1930) *base fundamental del paradigma*
 
-![a](./images/Image3.png)
+![a](./images/Imagen3.png)
 
 se basa en tres reglas
 * Uso de variables.
