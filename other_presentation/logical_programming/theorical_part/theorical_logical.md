@@ -2,6 +2,8 @@
 
 [Link de la página](http://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/logica_teoria/introduccion.html)
 
+[Link del tutorial de Prolog](http://ferestrepoca.github.io/paradigmas-de-programacion/proglogica/tutoriales/prolog-gh-pages/index.html)
+
 * **Resumen creado por:** Guiselle Tatiana Zambrano Penagos
 * **Fecha de creación:** 26 de Enero de 2020
 
