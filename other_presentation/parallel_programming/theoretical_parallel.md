@@ -1,4 +1,19 @@
 [link de la presentación en youtube](https://www.youtube.com/watch?v=Qb0_xnTgibI)
+
+[Link de la página](http://ferestrepoca.github.io/paradigmas-de-programacion/paralela/paralela_teoria/index.html)
+
+**Resumen creado por:** Guiselle Tatiana Zambrano Penagos
+
+**Fecha de Creación:** 26 de Enero de 2020
+
+# Tutorial Julia
+
+[Programación Básica](https://nbviewer.jupyter.org/github/GuiselleZP/LP_paradigm_presentations/blob/master/my_presentation/basicLevel.ipynb)
+
+[Programación intermedia](https://nbviewer.jupyter.org/github/GuiselleZP/LP_paradigm_presentations/blob/master/my_presentation/intermediateLevel.ipynb)
+
+[Programación Avanzada](https://nbviewer.jupyter.org/github/GuiselleZP/LP_paradigm_presentations/blob/master/my_presentation/advancedLevel.ipynb)
+
 # Programación Paralela
 
 ## Introducción
@@ -17,7 +32,7 @@ Surge porque es natural pensar en paralelo en ciertos procesos cotidianos.
 asigna un número de secuencia y son atendidas una destrás de la otra por un 
 procesador
 
-![Serializar](./images/I00.png)/
+![Serializar](./images/I00.png){ width=40% }\
 
 * **Parametrizar:** Dividir un problema muy grande en problemas más pequeños que
 puedan ser ejecutados concurrentemente (al mismo tiempo), que a su vez son 
@@ -28,7 +43,7 @@ distintas:
 	* Una única máquina ejecutando procesos en 4-8 nucleos distintos.
 	* Un número arbitrario de máquinas conectadas entre sí a través de una red.
 
-![Paralelizar](./images/I01.png)/
+![Paralelizar](./images/I01.png){ width=40% }\
 
 ## Conceptos clave
 
@@ -49,7 +64,7 @@ Otros conceptos importantes son:
 * **Hilos:** Son un proceso liviano que ayuda a la realización de un proceso
 más pesado, se comunican entre ellos a través una memoria global. 
 
-![Hilos](./images/I02.png)/
+![Hilos](./images/I02.png){ width=40% }\
 
 * **Granularidad:** Se refiere al tamaño de cada tarea y la dependencia entre
 ellas.
@@ -59,7 +74,7 @@ ellas.
 	* **Granularidad fina:** Muchas tareas que tienen poco trabajo y hay mucha
 	dependencia entre ellas. Necesitan gran sincronización.
 
-![Granularidad](./images/I03.png)/
+![Granularidad](./images/I03.png){ width=40% }\
 
 * **Sincronización:** En qué momento realizo las tareas para satizfacer las
 dependencias.
@@ -73,7 +88,7 @@ que representa la secuencia de las tareas a realizar en un programa y la
 **sección critica** es el **camino más largo que existe** y que debe ser 
 recorrido a la hora de ejecutar el programa.
 
-![Grafo](./images/I04.png)/
+![Grafo](./images/I04.png){ width=40% }\
 
 * **Ley de ahmdal:** Indica que tanto se puede mejorar la velocidad de 
 ejecución de un programa, limitandolo con el porcentaje del programa que pueda
@@ -108,7 +123,7 @@ Es el módelo más sencillo. Todos los procesos tienen el mismo acceso a la
 memoria, no hay "dueños" de los datos. Sin embargo se hace dificil el manejo de
 datos locales, lo que puede llevar a produci las **condiciones de carrera**.
 
-![Memoria Compartida](./images/I05.png)/
+![Memoria Compartida](./images/I05.png){ width=30% }\
 
 ### Modelo con Hilos
 
@@ -116,14 +131,14 @@ Se divide una tarea compleja en varias que son menos complejas, se ejecutan al
 mismo tiempo y luego se unen cuando ya tienen la respuesta cada una. Esto es
 en un mismo servidor.
 
-![Memoria con hilos](./images/I06.png)/
+![Memoria con hilos](./images/I06.png){ width=30% }\
 
 ### Memoria distribuida
 
 Los procesos se pueden ubicar en una o varias máquinas. Los procesos 
 intercambian datos por medio de las funciones _sen()_ y _recive()_.
 
-![Memoria distribuida](./images/I07.png)
+![Memoria distribuida](./images/I07.png){ width=30% }\
 
 ### Datos paralelos
 
@@ -132,7 +147,7 @@ donde están almacenados los datos y se ejecutan los procesos en paralelo.
 Hacen sus tareas en diferentes particiones de la estructura, con el fin de 
 evitar las condiciones de carrera.
 
-![Datos paralelos](./images/I08.png)
+![Datos paralelos](./images/I08.png){ width=40% }\
 
 ### Modelos Híbridos
 
@@ -140,7 +155,7 @@ Se fucionan cualquiera de los modelos descritos previamente. En el siguiente
 ejemplo se tiene un modelo de **memoria distribuida** en donde en cada servidor
 actúa por si solo un **modelo con hilos**.
 
-![Modelo Híbrido](./images/I09.png)
+![Modelo Híbrido](./images/I09.png){ width=40% }\
 
 ## Patrones de control paralelos
 
@@ -170,7 +185,7 @@ Por ejemplo, si en la unidad superior se le desea sumar
 2 unidades a cada elemento, estas operaciones se pueden hacer en paralelo, dando
 como resultado un vector de salida representado por la unidad inferior.
 
-![Map](./images/I0A.png)
+![Map](./images/I0A.png){ width=30% }\
 
 #### Stencil 
 
@@ -183,7 +198,7 @@ izquierda. Cada operación se puede hacer paralelamente, sin embargo se debe
 tener cuidado ya que la estructura no es infinita, por lo tanto se deben manejar
 adecuadamente las excepciones.
 
-![Stencil](./images/I0B.png)
+![Stencil](./images/I0B.png){ width=30% }\
 
 #### Recurrencia
 
@@ -198,12 +213,12 @@ que en este caso es un vector, a un solo elemento de salida.
 En el pseudocódigo se devuelve la sumatoria de todos los elementos del vector.
 La **ruta crítica** es igual al tamaño del vector.
 
-![Reducción a-1](./images/I0C.png)
-![Reducción a-2](./images/I0D.png)
+![Reducción a-1](./images/I0C.png){ width=25% }\
+![Reducción a-2](./images/I0D.png){ width=25% }\
 
 Puesto que la función es asociativa, esta se puede paralelizar, obteniendo:
 
-![Reducción b](./images/I0E.png)
+![Reducción b](./images/I0E.png){ width=30% }\
 
 #### Scan
 
@@ -217,11 +232,19 @@ para cada uno.
 
 Enfoque serial:
 
-![Scan](./images/I0F.png)
+![Scan](./images/I0F.png){ width=30% }\
 
 Enfoque paralelo:
 
-![Scan](./images/I10.png)
+![Scan](./images/I10.png){ width=30% }\
+
+#### Fork/Join
+
+Una tarea **pesada** puede ser dividida en tareas independientes **sencillas**
+_(fork)_, las cuales se combinan cuando tienen la solución a la tarea inicial
+_(join)_.
+
+![Fork/Join](./images/I11.png){ width=30% }\
 
 ## Lenguajes de Programación
 
@@ -236,6 +259,24 @@ Enfoque paralelo:
 	*PVM 
 
 * **API**
-	* OpenMP
-	* OpenCL
+	* **OpenMP:** Utilizada en programación **multiproceso - multihilo** de 
+	memoria compartida, el cual se fundamenta en el modelo **Fork/Join**. 
+	Trabaja principalmente en C y C++.
+	* **OpenCL:i** Consta de una interfaz de programación de aplicaciones y de 
+	un 	lenguaje de programación. Juntos permiten crear aplicaciones con 
+	paralelismo a nivel de datos y de tareas.
 	* CUDA
+
+## Aplicaciones
+
+* **Predicción del cambio climático:** En 1904 se propuso un modelo de 
+ecuaciones diferenciales para la predicción metereológica.
+* Movimiento de placas tectónicas
+* Ciencias de la computación
+* Diseño de armas
+* Industria y comercio: modelos financieros y económicos (con inteligencia
+artificial)
+
+### Top de áreas de aplicación
+
+![Fork/Join](./images/I12.png){ width=60% }\
